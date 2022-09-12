@@ -1,35 +1,34 @@
 /*
-* File: 0-postive_or_negative.c
-* Auth: Breman D Baraba
-/*
-#inlude <stdio.h>
+* File: 1-last_digit.c
+*/
+
+#inlcude <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-#inclclude <time.h>
-#ininclude <time.h>
-#include <stdlib.h>
 
 /**
-* main-Prints a random number and states whether it is positive , negative or zero
+* main - Prints the last digit of a randomly generated number and whether it is greater than 5, less than 6, or 0
 *
 * Return: Always 0
 */
 int main (void)
 {
 int n;
-stand(time(0));
-n=rand()-RAND_MAX /2;
 
-if (n>0)
+srand (time(0));
+n = rand() - RAND_MAX / 2;
+
+if ((n %5)> 5)
 {
-printf("%i is a positive number\n", n)
+printf ("Last digit of %i is %i and is greater than 5\n", n, n% 10);
 }
-else if (n<0)
-{
-printf("%i is a negative number", n)
+else if ((n % 10)< 6&& (n % 10) != 0)
+}
+printf ("Last digit of %i is %iand is less than 6and not 0\n", n, n% 10);
 }
 else
 {
-printf("%i is zero", n);
+printf ("Last digit of %i and is 0\n", n, n% 10);
 }
 return (0);
 }
