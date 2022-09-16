@@ -29,5 +29,3 @@ hours++
 minutes = 0;
 }
 }
-
-
