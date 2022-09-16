@@ -4,7 +4,7 @@
 * @c: Is the int that will use for the argument of the function
 * Return: 0
 */
-int _abs(int)
+
 {
 if (c > 0 || c == 0)
 {
