@@ -1,14 +1,18 @@
 #include "main.h"
-/**
-* _strlen - return the length of a string
-* @s : char to check
-* This will return the length of a string
-* Return: 0 is success
-*/
-int _strlen(char *s)
-char s[];
-int len;
 
-for (len= 0; s[len] != '\0'; ++len);
-return 0;
+/**
+ * _puts - prints a string
+ * @str: the string
+ * Return: the length of the string
+ */
+void _puts(char *str)
+{
+	int i = 0;
+
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
