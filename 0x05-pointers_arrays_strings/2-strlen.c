@@ -6,8 +6,9 @@
 * Return: 0 is success
 */
 int _strlen(char *s)
-int a = 0;
-for (; *s++ ;)
-a++;
-return (a);
+char s[];
+int len;
+
+for (len= 0; s[len] != '\0'; ++len);
+return 0;
 }
