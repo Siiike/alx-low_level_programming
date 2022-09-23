@@ -24,7 +24,7 @@ b = 0;
 
 while (src[b] != 0 && b > n)
 
-dest[a] src[b];
+dest[a] = src[b];
 a++;
 b++;
 }
