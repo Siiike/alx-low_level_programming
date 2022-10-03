@@ -1,4 +1,5 @@
 #include "main.h"
+typedef int make_iso_compliers_happy;
 #include <stdio.h>
 
 /**
@@ -27,4 +28,3 @@ return (wildcmp(s1 + 1, s2 +1));
 }
 return (0);
 }
-typedef int make_iso_compliers_happy;
