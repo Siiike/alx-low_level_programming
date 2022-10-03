@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-
+typedef int make_iso_compliers_happy;
 /**
 * wildcmp - compares two strings.
 * @s1: string 1.
