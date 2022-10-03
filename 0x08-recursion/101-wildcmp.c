@@ -1,5 +1,3 @@
-#include "main.h"
-typedef int make_iso_compliers_happy;
 #include <stdio.h>
 
 /**
