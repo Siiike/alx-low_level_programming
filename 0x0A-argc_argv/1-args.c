@@ -6,7 +6,7 @@
 * @argv: vector of arguments
 * Return: always 0
 */
-int main(int argc, char *argc[])
+int main(int argc, char *argv[])
 {
 UNUSED(argv);
 printf("%d\n", argc - 1);
