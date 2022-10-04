@@ -35,5 +35,5 @@ return (0);
 */
 int is_palindrome(char *s)
 {
-return (pal_checker(s, O, _strlen_recursion(s) - 1));
+return (pal_checker(s, 0, _strlen_recursion(s) - 1));
 }
