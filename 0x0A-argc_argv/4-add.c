@@ -37,8 +37,6 @@ return (1);
 }
 sum += atoi(argv[argc]);
 }
-
 printf("%i\n", sum);
-
 return (0);
 }
