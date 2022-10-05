@@ -23,7 +23,7 @@ return (1);
 
 total = strtol(argv[1], &p, 10);
 count = 0;
-if (! *p)
+if (!*p)
 {
 while (total > 1)
 {
