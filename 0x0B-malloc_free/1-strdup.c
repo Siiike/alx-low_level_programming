@@ -18,6 +18,6 @@ return (NULL);
 for (index = 0; str[index]; index++)
 duplicate[index] = str[index];
 
-duplicate[Len] = '\0';
+duplicate[len] = '\0';
 return (duplicate);
 }
