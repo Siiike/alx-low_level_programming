@@ -27,6 +27,6 @@ do
 {
 *range++ = min++;
 }
-while (min < max);
+while (min < max)
 return (range = width - 1);
 }
