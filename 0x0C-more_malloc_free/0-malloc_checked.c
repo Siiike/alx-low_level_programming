@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* malloc_chexker - Allocates memory using malloc.
+* malloc_checked - Allocates memory using malloc.
 * @b: The number of bytes to be allowed.
 *
 * Return: A pointer to the allocated memory.
