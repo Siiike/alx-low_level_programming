@@ -5,7 +5,7 @@
 /**
  * array_range - create an array of integers containing a range of values
  * @min: the lower bound (included)
- * * @max: the upper bound (included)
+ * @max: the upper bound (included)
  *
  * Return: If memory allocation fails or max is less than min, return NULL
  * otherwise, return the newly created array
@@ -18,15 +18,15 @@ unsigned int width;
 if (max < min)
 return (NULL);
 
-width= max - min;
+width = max - min;
 
-range= malloc(sizeof(int) * (width + 1));
+range = malloc(sizeof(int) * (width + 1));
 if (!range)
 return (NULL);
-do {
+do 
+{
 *range++ = min++;
 }
 while (min < max);
 return (range = width - 1);
 }
-
