@@ -23,8 +23,7 @@ width = max - min;
 range = malloc(sizeof(int) * (width + 1));
 if (!range)
 return (NULL);
-do 
-{
+do {
 *range++ = min++;
 }
 while (min < max)
