@@ -1,32 +1,34 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * array_range - create an array of integers containing a range of values
- * @min: the lower bound (included)
- * @max: the upper bound (included)
- *
- * Return: If memory allocation fails or max is less than min, return NULL
- * otherwise, return the newly created array
+ * array_range - range of arrays
+ * @min: min of arrange
+ * @max: max of arrays
+ * Return: int value
  */
 int *array_range(int min, int max)
 {
-int *range;
-unsigned int width;
+	int i;
+	int *t;
+	int len;
 
-if (max < min)
-return (NULL);
+	if (min > max)
+		return (NULL);
+	len = 0;
+	for (i = min; i <= max; i++)
+		len++;
 
-width = max - min;
+	t = malloc(sizeof(int) * len);
+	if (t == NULL)
+		return (NULL);
 
-range = malloc(sizeof(int) * (width + 1));
-if (!range)
-return (NULL);
-do 
-{
-*range++ = min++;
-}
-while (min < max)
-return (range = width - 1);
+	i = 0;
+	while (min <= max)
+	{
+		t[i] = min;
+		i++;
+		min++;
+	}
+	return (t);
 }
