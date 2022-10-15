@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 #ifndef FUNCTION_LIKE_MACRO_H
 #define FUNCTION_LIKE_MACRO_H
-#define
-=======
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,4 +14,3 @@ int main(void)
 printf("%s\n", __FILE__);
 return (0);
 }
->>>>>>> a81036f69220b68671bd77debb158684138bd452
