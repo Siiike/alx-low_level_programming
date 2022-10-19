@@ -40,7 +40,10 @@ if (!d)
 return (NULL);
 d->name = _strdup(name);
 if (name && !d->name)
-return (free (d->name), free(d), NULL);
+return (free(d), NULL);
+d->owner = _strdup(owner);
+if (owner && !d->owner)
+return (free(d->name), free(d), NULL);
 d->age = age;
 return (d);
 }
